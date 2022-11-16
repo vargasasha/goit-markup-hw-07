@@ -1,49 +1,49 @@
-.about-list {
+.card-list {
   display: flex;
   gap: 30px;
 }
 
-.about-item {
+.card-list__item {
   flex-basis: calc((100% - 90px) / 4);
   &::before {
-  content: "";
-  width: 270px;
-  height: 120px;
-  display: block;
-  background-color: var(--light-background-color);
-  border-radius: 4px;
-  margin-bottom: 30px;
-}
-&:nth-child(1)::before {
-  background-image: url(../images/antenna.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 70px 70px;
+    content: "";
+    width: 270px;
+    height: 120px;
+    display: block;
+    background-color: var(--light-background-color);
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+  &:nth-child(1)::before {
+    background-image: url(../images/antenna.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px 70px;
+  }
+
+  &:nth-child(2)::before {
+    background-image: url(../images/clock.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px 70px;
+  }
+
+  &:nth-child(3)::before {
+    background-image: url(../images/diagram.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px 70px;
+  }
+
+  &:nth-child(4)::before {
+    background-image: url(../images/astronaut.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px 70px;
+  }
 }
 
-&:nth-child(2)::before {
-  background-image: url(../images/clock.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 70px 70px;
-}
-
-&:nth-child(3)::before {
-  background-image: url(../images/diagram.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 70px 70px;
-}
-
-&:nth-child(4)::before {
-  background-image: url(../images/astronaut.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 70px 70px;
-}
-}
-
-.about-subtitle {
+.card-list__subtitle {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -52,7 +52,7 @@
   color: var(--main-title-color);
   margin-bottom: 10px;
 }
-.about-text {
+.card-list__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;

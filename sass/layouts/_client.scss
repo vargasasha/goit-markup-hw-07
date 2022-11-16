@@ -1,4 +1,4 @@
-.client-title {
+.title {
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
@@ -7,15 +7,15 @@
   color: var(--main-title-color);
   margin-bottom: 50px;
 }
-.client-list {
+.brand-list {
   display: flex;
   gap: 30px;
 }
-.client-item {
+.brand-list__item {
   width: calc((100% - 150px) / 6);
   height: 92px;
 }
-.client-link {
+.brand-list__link {
   width: 100%;
   height: 100%;
   border: 1px solid var(--main-border-color);
